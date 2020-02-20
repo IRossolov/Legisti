@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="Keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!--<script src="lib/jquery-3.4.1.min.js"></script>-->
+
+    <title>Legisti - Услуги</title>
+</head>
+<body>
+  <div class="menu">
+    <div class="menu__center">
+      <div class="menu__logo bkg-img"></div>
+      <a class="menu__mobile bkg-img" href="##" onclick="event.target.parentNode.parentNode.classList.toggle('menu_opened')"></a>
+      <div class="menu__items">
+        <a class="menu__items__item" href="/">КОМПАНИЯ</a>
+        <a class="menu__items__item" href="/principes">ПРИНЦИПЫ</a>
+        <a class="menu__items__item menu__items__item_active" href="/service">УСЛУГИ</a>
+        <a class="menu__items__item" href="#">МАГАЗИН</a>
+        <a class="menu__items__item" href="/contacts">КОНТАКТЫ</a>
+      </div>
+    </div>
+    <div class="menu__bottom">
+      <a class="menu__lang bkg-img" href="#">RU</a>
+      <a class="menu__support bkg-img" href="#support">Центр поддержки</a>
+    </div>
+  </div>
+  <div class="mobile-cover" onclick="event.target.previousElementSibling.classList.remove('menu_opened')"></div>
+  <div class="content">
+
+    <div class="content__screen service__screen-1" id="service-list">
+      <div class="content__screen__logo bkg-img"></div>
+      <div class="content__screen__content">
+        <h1>Услуги</h1>
+        <ul class="service__screen-1__list">
+          <li>Правовое сопровождение бизнеса</li>
+          <li>Юридические услуги для владельцев компаний</li>
+          <li>Правовой аудит (Legal Due Diligence) </li>
+          <li>Сопровождение процедуры банкротства </li>
+          <li>Медиация и судебное урегулирование</li>
+          <li>Юридические услуги для физических лиц</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content__screen service__screen-2">
+      <div class="content__screen__logo bkg-img"></div>
+      <div class="content__screen__content">
+        <h2>Услуги</h2>
+        <a class="service__screen-2__back bkg-img" href="#service-list">ВСЕ УСЛУГИ</a>
+        <h3 class="service__screen-2__title">Правовое сопровождение бизнеса</h3>
+        <div class="service__screen-2__descr">Наша компания оказывает полный спектр услуг по правовому сопровождению бизнеса, включая создание компаний в различных юрисдикциях; сопровождение сделок и проектов; защиту интересов во взаимоотношениях с госорганами и многое другое.</div>
+        <div class="service__screen-2__bottom">
+          <a class="service__screen-2__next" href="##">СЛЕДУЮЩАЯ УСЛУГА</a>
+          <h4 class="service__screen-2__next-title">Правовой аудит (legal Due Diligence)</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
