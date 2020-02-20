@@ -9,7 +9,8 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" href="css/style.css">
-    <!--<script src="lib/jquery-3.4.1.min.js"></script>-->
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="js/page-switch.js"></script>
 
     <title>Legisti - Контакты</title>
 </head>
@@ -58,7 +59,7 @@
 
       <div class="content__screen__bottom">
         <div class="content__screen__page">Страница 1/2</div>
-        <a class="content__screen__next bkg-img" href="#service"></a>
+        <a class="content__screen__next bkg-img" href="#service" onClick="event.preventDefault(); switchPage(1)"></a>
       </div>
     </div>
 

@@ -7,7 +7,6 @@ body {
 }
 a,
 a:hover {
-  color: #000;
   text-decoration: none;
 }
 button {
@@ -130,17 +129,40 @@ p {
 }
 
 .content {
-  padding-left: 50%;
-  width: 100%;
+  margin-left: 50%;
+  width: 50%;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
 }
 .content__screen {
   padding: 100px 80px 80px 80px;
-  position: relative;
-  min-height: 100vh;
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #FFF;
+  overflow: auto;
 }
-.content__screen:not(:first-child) {
-  margin-top: 80px;
+.content > *:first-child {
+  display: block;
 }
+@keyframes pagination-next {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes pagination-prev {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
 .content__screen__bottom {
   position: absolute;
   bottom: 0;
@@ -341,29 +363,29 @@ p {
   list-style: none;
 }
 .service__screen-1__list li:before,
-.service__screen-2__descr:before,
-.service__screen-2__next-title:before {
+.service__descr:before,
+.service__next-title:before {
   content: '—';
   color: #AE726A;
   margin-right: 10px;
 }
-.service__screen-2__next-title:before {
+.service__next-title:before {
   color: #332925;
 }
-.service__screen-2__back,
-.service__screen-2__next {
+.service__back,
+.service__next {
   display: block;
   font-weight: bold;
   font-size: 10px;
   line-height: 161%;
   letter-spacing: 0.235em;
+  color: #AE726A !important;
+}
+.service__back:hover,
+.service__next:hover {
   color: #AE726A;
 }
-.service__screen-2__back:hover,
-.service__screen-2__next:hover {
-  color: #AE726A;
-}
-.service__screen-2__back:before {
+.service__back:before {
   content: '';
   float: left;
   width: 16px;
@@ -371,7 +393,7 @@ p {
   background-image: url('../img/back-arrow.svg');
   margin-right: 10px;
 }
-.service__screen-2__title {
+.service__title {
   font-weight: bold;
   font-size: 20px;
   line-height: 140%;
@@ -379,10 +401,10 @@ p {
   letter-spacing: 0.01em;
   margin-top: 30px;
 }
-.service__screen-2__next-title {
+.service__next-title {
   width: 100%;
 }
-.service__screen-2__bottom {
+.service__bottom {
   margin-top: 100px;
 }
 

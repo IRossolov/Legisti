@@ -9,7 +9,8 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" href="css/style.css">
-    <!--<script src="lib/jquery-3.4.1.min.js"></script>-->
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="js/page-switch.js"></script>
 
     <title>Legisti - Услуги</title>
 </head>
@@ -39,12 +40,12 @@
       <div class="content__screen__content">
         <h1>Услуги</h1>
         <ul class="service__screen-1__list">
-          <li>Правовое сопровождение бизнеса</li>
-          <li>Юридические услуги для владельцев компаний</li>
-          <li>Правовой аудит (Legal Due Diligence) </li>
-          <li>Сопровождение процедуры банкротства </li>
-          <li>Медиация и судебное урегулирование</li>
-          <li>Юридические услуги для физических лиц</li>
+          <li><a href="##" onClick="event.preventDefault(); switchPage(1)">Правовое сопровождение бизнеса</a></li>
+          <li><a href="##" onClick="event.preventDefault(); switchPage(2)">Юридические услуги для владельцев компаний</a></li>
+          <li><a href="##" onClick="event.preventDefault(); switchPage(3)">Правовой аудит (Legal Due Diligence)</a></li>
+          <li><a href="##" onClick="event.preventDefault(); switchPage(4)">Сопровождение процедуры банкротства</a></li>
+          <li><a href="##" onClick="event.preventDefault(); switchPage(5)">Медиация и судебное урегулирование</a></li>
+          <li><a href="##" onClick="event.preventDefault(); switchPage(6)">Юридические услуги для физических лиц</a></li>
         </ul>
       </div>
     </div>
@@ -53,13 +54,79 @@
       <div class="content__screen__logo bkg-img"></div>
       <div class="content__screen__content">
         <h2>Услуги</h2>
-        <a class="service__screen-2__back bkg-img" href="#service-list">ВСЕ УСЛУГИ</a>
-        <h3 class="service__screen-2__title">Правовое сопровождение бизнеса</h3>
-        <div class="service__screen-2__descr">Наша компания оказывает полный спектр услуг по правовому сопровождению бизнеса, включая создание компаний в различных юрисдикциях; сопровождение сделок и проектов; защиту интересов во взаимоотношениях с госорганами и многое другое.</div>
-        <div class="service__screen-2__bottom">
-          <a class="service__screen-2__next" href="##">СЛЕДУЮЩАЯ УСЛУГА</a>
-          <h4 class="service__screen-2__next-title">Правовой аудит (legal Due Diligence)</h4>
+        <a class="service__back bkg-img" href="#service-list" onClick="event.preventDefault(); switchPage(0)">ВСЕ УСЛУГИ</a>
+        <h3 class="service__title">Правовое сопровождение бизнеса</h3>
+        <div class="service__descr">Наша компания оказывает полный спектр услуг по правовому сопровождению бизнеса, включая создание компаний в различных юрисдикциях; сопровождение сделок и проектов; защиту интересов во взаимоотношениях с госорганами и многое другое.</div>
+        <div class="service__bottom">
+          <a class="service__next" href="##" onClick="event.preventDefault(); switchPage(2)">СЛЕДУЮЩАЯ УСЛУГА</a>
+          <h4 class="service__next-title">Юридические услуги для владельцев компаний</h4>
         </div>
+      </div>
+    </div>
+
+    <div class="content__screen service__screen-3">
+      <div class="content__screen__logo bkg-img"></div>
+      <div class="content__screen__content">
+        <h2>Услуги</h2>
+        <a class="service__back bkg-img" href="#service-list" onClick="event.preventDefault(); switchPage(0)">ВСЕ УСЛУГИ</a>
+        <h3 class="service__title">Юридические услуги для владельцев компаний</h3>
+        <div class="service__descr">Наша компания оказывает полный спектр услуг по правовому сопровождению бизнеса, включая создание компаний в различных юрисдикциях; сопровождение сделок и проектов; защиту интересов во взаимоотношениях с госорганами и многое другое.</div>
+        <div class="service__bottom">
+          <a class="service__next" href="##" onClick="event.preventDefault(); switchPage(3)">СЛЕДУЮЩАЯ УСЛУГА</a>
+          <h4 class="service__next-title">Правовой аудит (legal Due Diligence)</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="content__screen service__screen-4">
+      <div class="content__screen__logo bkg-img"></div>
+      <div class="content__screen__content">
+        <h2>Услуги</h2>
+        <a class="service__back bkg-img" href="#service-list" onClick="event.preventDefault(); switchPage(0)">ВСЕ УСЛУГИ</a>
+        <h3 class="service__title">Правовой аудит (Legal Due Diligence)</h3>
+        <div class="service__descr">Наша компания оказывает полный спектр услуг по правовому сопровождению бизнеса, включая создание компаний в различных юрисдикциях; сопровождение сделок и проектов; защиту интересов во взаимоотношениях с госорганами и многое другое.</div>
+        <div class="service__bottom">
+          <a class="service__next" href="##" onClick="event.preventDefault(); switchPage(4)">СЛЕДУЮЩАЯ УСЛУГА</a>
+          <h4 class="service__next-title">Сопровождение процедуры банкротства</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="content__screen service__screen-5">
+      <div class="content__screen__logo bkg-img"></div>
+      <div class="content__screen__content">
+        <h2>Услуги</h2>
+        <a class="service__back bkg-img" href="#service-list" onClick="event.preventDefault(); switchPage(0)">ВСЕ УСЛУГИ</a>
+        <h3 class="service__title">Сопровождение процедуры банкротства</h3>
+        <div class="service__descr">Наша компания оказывает полный спектр услуг по правовому сопровождению бизнеса, включая создание компаний в различных юрисдикциях; сопровождение сделок и проектов; защиту интересов во взаимоотношениях с госорганами и многое другое.</div>
+        <div class="service__bottom">
+          <a class="service__next" href="##" onClick="event.preventDefault(); switchPage(5)">СЛЕДУЮЩАЯ УСЛУГА</a>
+          <h4 class="service__next-title">Медиация и судебное урегулирование</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="content__screen service__screen-6">
+      <div class="content__screen__logo bkg-img"></div>
+      <div class="content__screen__content">
+        <h2>Услуги</h2>
+        <a class="service__back bkg-img" href="#service-list" onClick="event.preventDefault(); switchPage(0)">ВСЕ УСЛУГИ</a>
+        <h3 class="service__title">Медиация и судебное урегулирование</h3>
+        <div class="service__descr">Наша компания оказывает полный спектр услуг по правовому сопровождению бизнеса, включая создание компаний в различных юрисдикциях; сопровождение сделок и проектов; защиту интересов во взаимоотношениях с госорганами и многое другое.</div>
+        <div class="service__bottom">
+          <a class="service__next" href="##" onClick="event.preventDefault(); switchPage(6)">СЛЕДУЮЩАЯ УСЛУГА</a>
+          <h4 class="service__next-title">Юридические услуги для физических лиц</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="content__screen service__screen-7">
+      <div class="content__screen__logo bkg-img"></div>
+      <div class="content__screen__content">
+        <h2>Услуги</h2>
+        <a class="service__back bkg-img" href="#service-list" onClick="event.preventDefault(); switchPage(0)">ВСЕ УСЛУГИ</a>
+        <h3 class="service__title">Юридические услуги для физических лиц</h3>
+        <div class="service__descr">Наша компания оказывает полный спектр услуг по правовому сопровождению бизнеса, включая создание компаний в различных юрисдикциях; сопровождение сделок и проектов; защиту интересов во взаимоотношениях с госорганами и многое другое.</div>
       </div>
     </div>
 

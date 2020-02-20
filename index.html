@@ -9,7 +9,8 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" href="css/style.css">
-    <!--<script src="lib/jquery-3.4.1.min.js"></script>-->
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="js/page-switch.js"></script>
 
     <title>Legisti - Компания</title>
 </head>
@@ -56,7 +57,7 @@
 
       <div class="content__screen__bottom">
         <div class="content__screen__page">Страница 1/4</div>
-        <a class="content__screen__next bkg-img" href="#curators"></a>
+        <a class="content__screen__next bkg-img" href="#curators" onClick="event.preventDefault(); switchPage(1)"></a>
       </div>
     </div>
 
@@ -91,7 +92,7 @@
       </div>
       <div class="content__screen__bottom">
         <div class="content__screen__page">Страница 2/4</div>
-        <a class="content__screen__next bkg-img" href="#clients"></a>
+        <a class="content__screen__next bkg-img" href="#clients" onClick="event.preventDefault(); switchPage(2)"></a>
       </div>
     </div>
 
@@ -119,7 +120,7 @@
       </div>
       <div class="content__screen__bottom">
         <div class="content__screen__page">Страница 3/4</div>
-        <a class="content__screen__next bkg-img" href="#support"></a>
+        <a class="content__screen__next bkg-img" href="#support" onClick="event.preventDefault(); switchPage(3)"></a>
       </div>
     </div>
 
